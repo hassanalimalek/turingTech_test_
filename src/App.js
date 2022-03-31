@@ -25,10 +25,11 @@ function App (props) {
         authEndpoint: 'https://frontend-test-api.aircall.io/pusher/auth'
       })
       console.log('Pusher--->', pusher)
-      // pusher.connection.bind('error', function (err) {
-      //   console.log('error binding--->', err)
-      // })
+      pusher.connection.bind('error', function (err) {
+        console.log('error binding--->', err)
+      })
       var channel = pusher.subscribe('private-aircall')
+      console.log('channel --->', channel)
     }
   }, [appCtx.userDetail])
 

@@ -50,7 +50,6 @@ export async function getAllCalls (variables) {
             new moment(a.created_at).format('YYYYMMDD') -
             new moment(b.created_at).format('YYYYMMDD')
         )
-
         return { calls: arr, count: response.data.totalCount }
       }
     })
