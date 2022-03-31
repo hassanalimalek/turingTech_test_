@@ -1,0 +1,74 @@
+.main-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.bg-div {
+  flex: 2;
+  display: flex;
+  background-color: white;
+  /* background: linear-gradient(to right, #122230 0%, rgb(9, 17, 24) 100%); */
+}
+
+.bg-content {
+  margin: auto;
+  padding: 0 60px;
+  max-width: 800px;
+  color: #fff;
+}
+.main-logo {
+  font-size: 40px;
+  letter-spacing: 8px;
+  font-weight: 800;
+}
+.title-h2 {
+  color: #fff;
+  line-height: 1.75;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.lorem-h6 {
+  color: #fff;
+  line-height: 1.75;
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.login-panel {
+  flex: 1;
+  display: flex;
+  background-color: #192d3e;
+  color: white;
+}
+.login-content {
+  margin: auto;
+}
+.tabs-div {
+  padding: 0 40px;
+}
+.title-login {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+}
+.input-groups {
+  margin-bottom: 25px;
+  padding: 0 30px;
+}
+.theinputs {
+  max-width: 400px;
+  min-width: 350px;
+}
+.btn-login {
+  width: 100%;
+  background-color: #192d3e;
+  border: none;
+}
+
+@media (max-width: 900px) {
+  .bg-div {
+    display: none;
+  }
+}
